@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "eslint-config-airbnb-es5",
+  "rules": {
+    "comma-dangle": 1,
+    "consistent-return": 1,
+    "handle-callback-err": 2,
+    "indent": 1,
+    "space-before-function-paren": [2, "never"],
+    "quotes": [2, "double", "avoid-escape"],
+    "valid-jsdoc": 1
+  }
+}
