@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SmartWalkieOrg/walkie-talkie-js"
+    "url": "git+https://github.com/SmartWalkieOrg/voiceping-router"
   },
   "keywords": [
     "PTT",
