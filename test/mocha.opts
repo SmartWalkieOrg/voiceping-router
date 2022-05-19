@@ -1,0 +1,4 @@
+--exit
+--reporter xunit
+--reporter-options output=./test-results/mocha/results.xml
+--timeout 5000

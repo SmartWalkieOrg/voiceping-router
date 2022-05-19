@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.16.0
+        environment:
+          DEBUG: "voiceping:*"
+          GROUP_BUSY_TIMEOUT: 5500
+          GROUP_INSPECT_INTERVAL: 2000
+          MAXIMUM_AUDIO_DURATION: 5000
+
+      - image: redis:2.8.19
+
+    working_directory: ~/walkie-talkie-js
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - v2-dependencies-{{ checksum "package-lock.json" }}
+
+      - run: npm install --no-package-lock
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v2-dependencies-{{ checksum "package-lock.json" }}
+
+      - run: npm run build
+
+      - run: npm run test
+
+      - store_test_results:
+          path: test-results
+
+      - store_artifacts:
+          path: test-results

@@ -1,0 +1,34 @@
+/* tslint:disable:object-literal-sort-keys */
+
+enum MessageType {
+  UNKNOWN = 0,
+  START = 1,
+  STOP = 2,
+  AUDIO = 3,
+  CONNECTION = 4,
+  STATUS = 5,
+  START_ACK = 6,
+  STOP_ACK = 7,
+  START_FAILED = 8,
+  LOGIN_DUPLICATED = 9,
+  USER_UPDATE = 10,
+  USER_DELETE = 11,
+  CHANNEL_UPDATE = 12,
+  CHANNEL_DELETE = 13,
+  TRIAL_EXPIRED = 14,
+  USER_ADD = 15,
+  USER_REMOVE = 16,
+  TEXT = 17,
+  IMAGE = 18,
+  OFFLINE = 19,
+  DELIVERED = 20,
+  READ = 21,
+  TEXT_ACK = 22,
+  INTERACTIVE = 23,
+  INTERACTIVE_ACK = 24,
+  CONNECTION_TEST = 25,
+  CONNECTION_ACK = 26,
+  UNAUTHORIZED_GROUP = 27
+}
+
+export = MessageType;

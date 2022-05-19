@@ -1,0 +1,26 @@
+{
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "eslint-config-airbnb-es5",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "root": true,
+  "rules": {
+    "comma-dangle": 1,
+    "consistent-return": 1,
+    "handle-callback-err": 2,
+    "indent": 1,
+    "quotes": [2, "double", "avoid-escape"],
+    "space-before-function-paren": [2, "never"],
+    "valid-jsdoc": 1,
+    "@typescript-eslint/no-var-requires": 0
+  }
+}

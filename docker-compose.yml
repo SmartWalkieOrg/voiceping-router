@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+
+  vp-router:
+    image: "smartwalkie/voiceping-router"
+    environment:
+      - REDIS_HOST=redis
+    ports:
+      - 3000:3000
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "2"
+        max-size: "100m"
+    restart: always
+
+  redis:
+    image: redis
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "2"
+        max-size: "100m"
+    restart: always

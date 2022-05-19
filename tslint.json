@@ -1,0 +1,36 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {
+    "trailing-comma": [
+      true, {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ]
+  },
+  "rules": {
+    "no-console": {
+      "options": [
+        true,
+        "log",
+        "warning"
+      ],
+      "severity": "warning"
+    },
+    "only-arrow-functions": false,
+    "prefer-const": {
+      "severity": "warning"
+    },
+    "trailing-comma": [
+      true, {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ],
+    "no-var-requires": 0
+  },
+  "rulesDirectory": []
+}
