@@ -43,9 +43,9 @@ Install dependencies with `npm` and start
     $ npm run build
     $ npm run start
 
-The server should be running on `wss://localhost:3000` by default. You can check in browser using `http://<your-ip-or-hostname>` it should be showing something like this:
+The server should be running on `ws://localhost:3000` by default. You can check in browser using `http://<your-ip-or-hostname>` it should be showing something like this:
 ```
-Welcome to VoicePing Router 2.3.3-LITE
+Welcome to VoicePing Router 1.0.0
 ```
 
 ### Development
@@ -77,7 +77,7 @@ The easiest way to run voiceping-server using a single command is by using docke
 Same as above. When you access `http://<your-ip-or-hostname>` from your browser, you should see:
 
 ```
-Welcome to VoicePing Router
+Welcome to VoicePing Router 1.0.0
 ```
 
 ## Self-hosted VoicePing Router
